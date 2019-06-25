@@ -1,0 +1,89 @@
+@letra: #00CC99;
+
+body{
+  background: rgba(51, 51, 51, 1);
+}
+
+.texto(){
+  font-family: 'Bahnschrift', serif;
+  color: @letra;
+  cursor: default;
+}
+
+.botao(@altura, @largura){
+  background-color: @letra;
+  padding: @altura @largura;
+  border-radius: 25px;
+  color: #eeeeee;
+}
+
+h1, h2, h3, h4, h5, p, span, a{
+  .texto();
+}
+
+i{
+  color: @letra;
+}
+
+nav ul{
+  .texto();
+
+  .nav-item, .nav-link{
+    color: #1b1e21;
+  }
+
+  .nav-item:hover, .nav-link:hover{
+    color: @letra;
+  }
+}
+
+.navbar-toggler{
+  color: #1b1e21;
+}
+
+a:hover{
+  .texto();
+}
+
+#btn-curriculo{
+  .botao(8px, 30px);
+}
+
+header{
+  img{border-radius: 50px;}
+  h4 .pl-2{ font-size: 12px;}
+}
+
+.projeto{
+  background-color: #eeeeee;
+  border-radius: 10px;
+  border: @letra 1px solid;
+
+  .texto();
+
+  .btn{
+    .botao(4px, 16px);
+  }
+  p{
+    font-size: smaller;
+    background-color: @letra;
+    color: #eeeeee;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+}
+
+section{
+  margin-top: 10%;
+}
+
+footer{
+  background-color: #eeeeee;
+  .texto();
+
+  .btn{
+    .botao(8px, 30px);
+  }
+
+
+}
